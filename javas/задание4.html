@@ -1,0 +1,21 @@
+<head>
+<title>Простая анимация</title>
+<script>
+function moveTxt() { // firefox и IE
+ if  (parseInt(anim.style.top) <500) {
+  left1=parseInt(anim.style.left)+2;
+  top1=parseInt(anim.style.top)+2;
+  anim.style.left= left1+"px";
+  anim.style.top= top1+"px";
+  setTimeout("moveTxt()", 50);
+ }
+}
+</script>
+</head>
+<body onLoad="moveTxt()">
+ <div id="anim" style="position:absolute; left:10; top:10">
+  Текст, шагом марш!
+</div>
+</body>
+</html>
+<html>

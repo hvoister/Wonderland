@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <link rel="shortcut icon" href="../images/logo.png" type="image/png">
+        <link href = "../style.css" rel = "stylesheet" type = "text/css">
+        <script language = "JavaScript">
+      		var bigsize1 = "600";
+      		var smallsize1 = "400";
+      		var bigsize2 = "400";
+      		var smallsize2 = "200";
+
+      		function changeSizeImage1(im) {
+        			if(im.width == bigsize1)
+        				im.width = smallsize1;
+        			else im.width = bigsize1;
+        		}
+      		function changeSizeImage2(im) {
+        			if(im.width == bigsize2)
+        				im.width = smallsize2;
+        			else im.width = bigsize2;
+      		}
+      	</script>
+
+        <title> Wonderland - Галерея </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="name"><h1>Wonderland</h1></div>
+        </header>
+
+        <nav>
+            <div class = "navigation">
+              <a href="../index.html">Главная</a>
+            </div>
+
+            <div class = "navigation">
+              <a href="indi.html">Инди-рок</a>
+            </div>
+
+            <div class = "navigation">
+              <a href="alt.html">Альт-рок</a>
+            </div>
+
+            <div class = "navigation">
+              <a href="post.html">Пост-рок</a>
+            </div>
+
+            <div class = "navigation">
+              <a href="poll.html">Опрос</a>
+            </div>
+        </nav>
+
+        <main style="height:1200px;">
+
+        <div id="gal">
+        <div class="gallery">
+        <center>
+            <p style="color: white"><b>Нажмите на картинку, чтобы увеличить или скрыть её</b></p>
+          </center>
+            <img src="../images/1.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/2.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/3.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/13.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/14.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/15.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/16.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/17.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/19.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/18.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/7.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/8.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/9.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/10.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+            <img src="../images/11.png" width="200" class="galleryimg" onclick="changeSizeImage2(this)">
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer_other">
+          <p class="footert">CBS Interactive © 2022 wonderland.fm <br>Все права защищены</p>
+      </footer>
+    </body>
+    </html>

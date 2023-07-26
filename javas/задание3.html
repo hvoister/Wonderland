@@ -1,0 +1,44 @@
+<html>
+  <head>
+	</head>
+
+  <body>
+    <span
+      id="mover"
+      style="position: absolute; left: 100px; "
+      onload="moveRight()"
+      >Текст наконец-то шагает</span
+    >
+<script>
+      let mover = document.getElementById("mover");
+      let leftPx = 100;
+      (function moveRight() {
+        setInterval(() => {
+          leftPx += 10;
+          mover.style.left = `${leftPx}px`;
+        }, 1000);
+      })();
+    </script> 
+    
+
+	    <span
+      id="mover2"
+      style="position: absolute; left: 100px; top:40px"
+      onload="moveRightandDown()">
+	Это было тяжело сделать
+	</span>
+    <script>
+      let mover2 = document.getElementById("mover2");
+      	let leftPx2 = 100;
+	let topPx2 = 40;
+      (function moveRightandDown() {
+        setInterval(() => {
+          leftPx2 += 10;
+	  topPx2 +=10
+          mover2.style.left = `${leftPx2}px`;
+	  mover2.style.top = `${topPx2}px`;
+        }, 1000);
+      })();
+    </script>
+  </body>
+</html>

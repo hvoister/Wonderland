@@ -1,0 +1,85 @@
+<html>
+<head>
+<title> Задание 1 </title>
+<script>
+function inp_str()
+{
+	var str=prompt('Введите строку');
+	alert(str);
+}
+
+function sum()
+{
+	a=prompt('Введите a: ');
+	b=prompt('Введите b: ');
+	c=parseFloat(a)+parseFloat(b);
+	alert(c);
+}
+
+function openw()
+{
+var name=prompt("Имя пользователя");
+if (name != null && name!= '')
+{
+w=window.open("","newwin","height=300, width=300");
+w.document.write("<title>Новое окно</title>");
+w.document.write("<body bgcolor='palegreen'>");
+w.document.write("Привет, " + name + ", вот твое окно!");
+}
+}
+
+function opendoc()
+{
+if (confirm("Открыть документ или не открывать?"))
+	w=window.open('листинги/2.html');
+	else self.close();
+}
+
+</script>
+</head>
+<body>
+Задание 1 <br>
+<a href="#" onclick="alert('По-моему это ссылка')"> Нажми </a>
+<br><br>
+
+Задание 2 <br>
+<a href="#" onmouseover="alert('Секреты не рассказывают...')">Наведи, чтобы узнать секретик :)</a>
+<br><br>
+
+Задание 3 <br>
+<a href="#" onmouseover="inp_str()"> Наведи для ввода текста</a>
+<br><br>
+
+Задание 4 <br>
+<input type="button" onclick="sum()" value="Рассчитать сумму двух чисел">
+<br><br>
+
+Задание 5 <br>
+<input type="button" value="Открыть новое окно" onclick="openw()"><br>
+<input type="button" value="Закрыть новое окно" onclick="w.close()"><br>
+<br><br>
+
+Задание 6 <br>
+<form action="" method="post">
+<p>Введите имя:
+<input type="text" name="name" onfocus="window.status ='Впишите сюда своё имя'">
+<br>Что больше нравится?<br>
+<input type="radio" name="product" value="1"
+	onclick="window.status='Выбран шоколад'">Шоколад
+	<input type="radio" name="product" value="2"
+	onclick="window.status='Выбрано мороженое'">Мороженое <br>
+	<input type="submit" value="Отправить"
+	onclick="alert('Спасибо за участие в опросе')"></p>
+</form>
+
+<script>
+var a = confirm("Задание 7. Какую кнопку выберешь?");
+if (a)
+alert('Кнопка ОК')
+else alert('Кнопка cancel')
+</script>
+
+Задание 8<br>
+<input type="button" value="Открыть документ" onclick="opendoc()">
+</body>
+</html>

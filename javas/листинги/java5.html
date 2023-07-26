@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Объекты</title>
+<script>
+function openw()
+{
+ var win=window.open("", "newwin", "height=300,width=300")
+ win.document.write("<html>")
+ win.document.write("<title>Новое окно</title>")
+ win.document.write("<body bgcolor='white'>")
+ win.document.write("<center>")
+ win.document.write("<font size=+1>Новое окно</font><p>")
+ win.document.write("<a href='2.html' target='main window'>
+ Эта ссылка<br> откроется в главном окне</a><p>")
+ /* target указывает имя окна, в которое будет помещен ответ */
+ win.document.write("<p><hr><p>")
+ win.document.write("<a href='' onClick = 'self.close()'>
+ Эта закроет окно</a><p>")
+ win.document.write("</center></html>")
+ self.name="main window" //устанавливает имя окна
+}
+</script>
+</head>
+<body onLoad="openw()">
+</body>
+</html>

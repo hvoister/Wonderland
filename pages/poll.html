@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <link rel="shortcut icon" href="../images/logo.png" type="image/png">
+        <link href = "../style.css" rel = "stylesheet" type = "text/css">
+        <title> Wonderland </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="name"><h1>Wonderland</h1></div>
+        </header>
+
+        <nav>
+            <div class = "navigation">
+              <a href="../index.html">Главная</a>
+            </div>
+
+            <div class = "navigation">
+              <a href="indi.html">Инди-рок</a>
+            </div>
+
+            <div class = "navigation">
+              <a href="alt.html">Альт-рок</a>
+            </div>
+
+            <div class = "navigation">
+              <a href="post.html">Пост-рок</a>
+            </div>
+
+            <div class = "navigation">
+              <a href="poll.html">Опрос</a>
+            </div>
+        </nav>
+
+        <main id="poll"><h2 class="votes">
+          Какая Ваша любимая песня?
+          <form action="vote.php" method="post">
+            Индекс: <input type="text" class="place" name="id" size="20" maxlength="20"/><br>
+            Жанр: <input type="text" class="place" name="votes" size="20" maxlength="20"><br>
+            Исполнитель: <input type="text" class="place" name="isp" size="20" maxlength="20"><br>
+            Название: <input type="text" class="place" name = "name" ><br>
+            Имя/никнейм: <input type="text" class="place" name = "us" ><br>
+            <input type="submit" style="width: 350px; height: 50px; size: 14pt; background-color: #7b7fa6; font-size: 18pt; color: white; margin: 21px 10px; border-radius: 5px" name="submit" id="submit" value="Стать крутышом :)" />
+            <input type="button" onclick="document.location='vote.php'" style="width: 750px; height: 50px; size: 14pt; background-color: #7b7fa6; font-size: 18pt; color: white; margin-top: 21px; border-radius: 5px" value="Посмотреть список самых крутых пользователей и их выбор :)" />
+          </form>
+        </h2>
+        </main>
+        <div id="love" style="height:190px; left: 580px;">
+            <form action="lovers.php" method="post">
+                <h2>Как Вы оцениваете мой сайт? :)<br>
+                  <input type="radio" name="lover" value="5"> Великолепно (5)<br>
+                  <input type="radio" name="lover" value="4"> Прекрасно (4)<br>
+                  <input type="radio" name="lover" value="3"> Очень хорошо (3)<br>
+                  <input type="radio" name="lover" value="2"> Хорошо (2)<br>
+                </h2><br><div style="position: absolute; left: 550px; top: 5px; background-color: #000000; height: 180px; border-radius: 8px;">
+                <input type="submit" style="width: 450px; height: 50px; size: 14pt; background-color: #7b7fa6; font-size: 18pt; color: white; margin: 21px 10px; border-radius: 5px" value="Проголосовать" />
+                <input type="button" onclick="document.location='lovers.php'" style="width: 450px; height: 50px; size: 14pt; background-color: #7b7fa6; font-size: 18pt; color: white; margin-left: 10px;margin-top: 21px; border-radius: 5px" value="Посмотреть результаты голосования" />
+              </div>
+        </div>
+        <footer class="footer_other">
+            <p class="footert">CBS Interactive © 2022 wonderland.fm <br>Все права защищены</p>
+        </footer>
+    </body>
+</html>
